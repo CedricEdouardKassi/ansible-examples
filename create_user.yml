@@ -1,0 +1,2 @@
+---
+- user: name=ansibleusr comment="ansible user" shell=/bin/bash password={{ 'ansiblepwd' |password_hash('sha512') }}
