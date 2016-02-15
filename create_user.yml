@@ -1,2 +1,5 @@
 ---
-- user: name=ansibleusr comment="ansible user" shell=/bin/bash password={{ 'ansiblepwd' |password_hash('sha512') }}
+- hosts: cluster
+  remote_user: root
+  tasks:
+    - user: name=ansibleusr comment="ansible user" shell=/bin/bash password={{ 'ansiblepwd' |password_hash('sha512') }}
