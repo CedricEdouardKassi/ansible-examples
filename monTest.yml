@@ -4,3 +4,5 @@
   tasks:
     - name: test connection
       ping:
+    - name: coucou
+      shell : echo "coucou" &
